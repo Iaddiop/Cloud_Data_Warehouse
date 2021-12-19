@@ -105,12 +105,12 @@ CREATE TABLE IF NOT EXISTS artists (
 time_table_create = ("""
 CREATE TABLE IF NOT EXISTS time (
     start_time      TIMESTAMP, 
-    hour            SMALLINT, 
-    day             SMALLINT, 
-    week            SMALLINT, 
-    month           SMALLINT, 
-    year            SMALLINT, 
-    weekday         SMALLINT
+    hour            INT, 
+    day             INT, 
+    week            INT, 
+    month           INT, 
+    year            INT, 
+    weekday         INT
 ) SORTKEY (start_time);
 """)
 
