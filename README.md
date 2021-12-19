@@ -1,6 +1,6 @@
 # Data Warehouse with Amazon Redshift
 In this project, we will explain how to build an ETL pipeline that extracts data from S3 buckets, stages them in Redshift, and transforms data into a set of dimensional and fact tables for analytics of Sparkify streaming musics application, using AWS SDK for Pyhton language programming.
-Below the digram that explain the pipeline process ![image info](./Diagram.png)
+Below the digram that explain the pipeline process : ![image info](./Diagram.png)
 
 Different steps will be taken in this project:
 - Set [dwh.cfg](https://github.com/Iaddiop/Cloud_Data_Warehouse/blob/master/dwh.cfg) file to define all parameters that we need to create and connect to the Redshift cluster and to the S3 buckets
@@ -38,16 +38,28 @@ To learn more about [Redshift Data Types](https://docs.aws.amazon.com/redshift/l
 
 ## How to run this project :
 To run this project, please folowing the below steps :
+
 1 - Create Redshift cluster : run the Jupyter Notebook `Creating Redshift Cluster.ipynb`
+
 2 - Create tables : run `create_table.py`
+
 3 - Then lanch the etl script : run `etl.py` to process data (extract, transform and insert data to the tables)
+
 4 - To test the integration of the data : run `Test.ipynb` on Jupyter Notebook
 
 ## The expected results :
+
 **- songplays** : 333 rows
+
 **- users** : 105 rows
+
 **- songs** : 14896 rows
+
 **- artists** : 10025 rows
+
 **- time** : 333 rows
+
 ### References :
+- Data types : https://docs.aws.amazon.com/redshift/latest/dg/c_Supported_data_types.html
+
 - Convert timestamp : https://stackoverflow.com/questions/39815425/how-to-convert-epoch-to-datetime-redshift
